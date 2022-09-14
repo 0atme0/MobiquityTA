@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		50C101D728D22048001CAA4F /* MobiquityTAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C101D628D22048001CAA4F /* MobiquityTAApp.swift */; };
-		50C101D928D22048001CAA4F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C101D828D22048001CAA4F /* ContentView.swift */; };
 		50C101DB28D2204A001CAA4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C101DA28D2204A001CAA4F /* Assets.xcassets */; };
 		50C101DE28D2204A001CAA4F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C101DD28D2204A001CAA4F /* Preview Assets.xcassets */; };
 		50C101E828D2204A001CAA4F /* MobiquityTATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C101E728D2204A001CAA4F /* MobiquityTATests.swift */; };
 		50C101F228D2204A001CAA4F /* MobiquityTAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C101F128D2204A001CAA4F /* MobiquityTAUITests.swift */; };
 		50C101F428D2204A001CAA4F /* MobiquityTAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C101F328D2204A001CAA4F /* MobiquityTAUITestsLaunchTests.swift */; };
+		50C1020128D22286001CAA4F /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C1020028D22286001CAA4F /* SearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		50C101D328D22048001CAA4F /* MobiquityTA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobiquityTA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C101D628D22048001CAA4F /* MobiquityTAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiquityTAApp.swift; sourceTree = "<group>"; };
-		50C101D828D22048001CAA4F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		50C101DA28D2204A001CAA4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50C101DD28D2204A001CAA4F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		50C101E328D2204A001CAA4F /* MobiquityTATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobiquityTATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +43,8 @@
 		50C101ED28D2204A001CAA4F /* MobiquityTAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobiquityTAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C101F128D2204A001CAA4F /* MobiquityTAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiquityTAUITests.swift; sourceTree = "<group>"; };
 		50C101F328D2204A001CAA4F /* MobiquityTAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiquityTAUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		50C1020028D22286001CAA4F /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		50C1020228D22D7E001CAA4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +95,9 @@
 		50C101D528D22048001CAA4F /* MobiquityTA */ = {
 			isa = PBXGroup;
 			children = (
+				50C1020228D22D7E001CAA4F /* Info.plist */,
 				50C101D628D22048001CAA4F /* MobiquityTAApp.swift */,
-				50C101D828D22048001CAA4F /* ContentView.swift */,
+				50C1020028D22286001CAA4F /* SearchView.swift */,
 				50C101DA28D2204A001CAA4F /* Assets.xcassets */,
 				50C101DC28D2204A001CAA4F /* Preview Content */,
 			);
@@ -257,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50C101D928D22048001CAA4F /* ContentView.swift in Sources */,
+				50C1020128D22286001CAA4F /* SearchView.swift in Sources */,
 				50C101D728D22048001CAA4F /* MobiquityTAApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,11 +422,13 @@
 				DEVELOPMENT_TEAM = W7R6ZCLV57;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MobiquityTA/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,11 +453,13 @@
 				DEVELOPMENT_TEAM = W7R6ZCLV57;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MobiquityTA/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
