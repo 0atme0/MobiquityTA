@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50C101D728D22048001CAA4F /* MobiquityTAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C101D628D22048001CAA4F /* MobiquityTAApp.swift */; };
+		50C101D928D22048001CAA4F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C101D828D22048001CAA4F /* ContentView.swift */; };
+		50C101DB28D2204A001CAA4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C101DA28D2204A001CAA4F /* Assets.xcassets */; };
+		50C101DE28D2204A001CAA4F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C101DD28D2204A001CAA4F /* Preview Assets.xcassets */; };
+		50C101E828D2204A001CAA4F /* MobiquityTATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C101E728D2204A001CAA4F /* MobiquityTATests.swift */; };
+		50C101F228D2204A001CAA4F /* MobiquityTAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C101F128D2204A001CAA4F /* MobiquityTAUITests.swift */; };
+		50C101F428D2204A001CAA4F /* MobiquityTAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C101F328D2204A001CAA4F /* MobiquityTAUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50C101E428D2204A001CAA4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50C101CB28D22048001CAA4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50C101D228D22048001CAA4F;
+			remoteInfo = MobiquityTA;
+		};
+		50C101EE28D2204A001CAA4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50C101CB28D22048001CAA4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50C101D228D22048001CAA4F;
+			remoteInfo = MobiquityTA;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		50C101D328D22048001CAA4F /* MobiquityTA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobiquityTA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C101D628D22048001CAA4F /* MobiquityTAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiquityTAApp.swift; sourceTree = "<group>"; };
+		50C101D828D22048001CAA4F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		50C101DA28D2204A001CAA4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50C101DD28D2204A001CAA4F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		50C101E328D2204A001CAA4F /* MobiquityTATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobiquityTATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C101E728D2204A001CAA4F /* MobiquityTATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiquityTATests.swift; sourceTree = "<group>"; };
+		50C101ED28D2204A001CAA4F /* MobiquityTAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobiquityTAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C101F128D2204A001CAA4F /* MobiquityTAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiquityTAUITests.swift; sourceTree = "<group>"; };
+		50C101F328D2204A001CAA4F /* MobiquityTAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiquityTAUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50C101D028D22048001CAA4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50C101E028D2204A001CAA4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50C101EA28D2204A001CAA4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50C101CA28D22048001CAA4F = {
+			isa = PBXGroup;
+			children = (
+				50C101D528D22048001CAA4F /* MobiquityTA */,
+				50C101E628D2204A001CAA4F /* MobiquityTATests */,
+				50C101F028D2204A001CAA4F /* MobiquityTAUITests */,
+				50C101D428D22048001CAA4F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50C101D428D22048001CAA4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50C101D328D22048001CAA4F /* MobiquityTA.app */,
+				50C101E328D2204A001CAA4F /* MobiquityTATests.xctest */,
+				50C101ED28D2204A001CAA4F /* MobiquityTAUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50C101D528D22048001CAA4F /* MobiquityTA */ = {
+			isa = PBXGroup;
+			children = (
+				50C101D628D22048001CAA4F /* MobiquityTAApp.swift */,
+				50C101D828D22048001CAA4F /* ContentView.swift */,
+				50C101DA28D2204A001CAA4F /* Assets.xcassets */,
+				50C101DC28D2204A001CAA4F /* Preview Content */,
+			);
+			path = MobiquityTA;
+			sourceTree = "<group>";
+		};
+		50C101DC28D2204A001CAA4F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				50C101DD28D2204A001CAA4F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		50C101E628D2204A001CAA4F /* MobiquityTATests */ = {
+			isa = PBXGroup;
+			children = (
+				50C101E728D2204A001CAA4F /* MobiquityTATests.swift */,
+			);
+			path = MobiquityTATests;
+			sourceTree = "<group>";
+		};
+		50C101F028D2204A001CAA4F /* MobiquityTAUITests */ = {
+			isa = PBXGroup;
+			children = (
+				50C101F128D2204A001CAA4F /* MobiquityTAUITests.swift */,
+				50C101F328D2204A001CAA4F /* MobiquityTAUITestsLaunchTests.swift */,
+			);
+			path = MobiquityTAUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50C101D228D22048001CAA4F /* MobiquityTA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50C101F728D2204A001CAA4F /* Build configuration list for PBXNativeTarget "MobiquityTA" */;
+			buildPhases = (
+				50C101CF28D22048001CAA4F /* Sources */,
+				50C101D028D22048001CAA4F /* Frameworks */,
+				50C101D128D22048001CAA4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobiquityTA;
+			productName = MobiquityTA;
+			productReference = 50C101D328D22048001CAA4F /* MobiquityTA.app */;
+			productType = "com.apple.product-type.application";
+		};
+		50C101E228D2204A001CAA4F /* MobiquityTATests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50C101FA28D2204A001CAA4F /* Build configuration list for PBXNativeTarget "MobiquityTATests" */;
+			buildPhases = (
+				50C101DF28D2204A001CAA4F /* Sources */,
+				50C101E028D2204A001CAA4F /* Frameworks */,
+				50C101E128D2204A001CAA4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50C101E528D2204A001CAA4F /* PBXTargetDependency */,
+			);
+			name = MobiquityTATests;
+			productName = MobiquityTATests;
+			productReference = 50C101E328D2204A001CAA4F /* MobiquityTATests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		50C101EC28D2204A001CAA4F /* MobiquityTAUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50C101FD28D2204A001CAA4F /* Build configuration list for PBXNativeTarget "MobiquityTAUITests" */;
+			buildPhases = (
+				50C101E928D2204A001CAA4F /* Sources */,
+				50C101EA28D2204A001CAA4F /* Frameworks */,
+				50C101EB28D2204A001CAA4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50C101EF28D2204A001CAA4F /* PBXTargetDependency */,
+			);
+			name = MobiquityTAUITests;
+			productName = MobiquityTAUITests;
+			productReference = 50C101ED28D2204A001CAA4F /* MobiquityTAUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50C101CB28D22048001CAA4F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					50C101D228D22048001CAA4F = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					50C101E228D2204A001CAA4F = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 50C101D228D22048001CAA4F;
+					};
+					50C101EC28D2204A001CAA4F = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 50C101D228D22048001CAA4F;
+					};
+				};
+			};
+			buildConfigurationList = 50C101CE28D22048001CAA4F /* Build configuration list for PBXProject "MobiquityTA" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50C101CA28D22048001CAA4F;
+			productRefGroup = 50C101D428D22048001CAA4F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50C101D228D22048001CAA4F /* MobiquityTA */,
+				50C101E228D2204A001CAA4F /* MobiquityTATests */,
+				50C101EC28D2204A001CAA4F /* MobiquityTAUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50C101D128D22048001CAA4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C101DE28D2204A001CAA4F /* Preview Assets.xcassets in Resources */,
+				50C101DB28D2204A001CAA4F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50C101E128D2204A001CAA4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50C101EB28D2204A001CAA4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50C101CF28D22048001CAA4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C101D928D22048001CAA4F /* ContentView.swift in Sources */,
+				50C101D728D22048001CAA4F /* MobiquityTAApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50C101DF28D2204A001CAA4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C101E828D2204A001CAA4F /* MobiquityTATests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50C101E928D2204A001CAA4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C101F228D2204A001CAA4F /* MobiquityTAUITests.swift in Sources */,
+				50C101F428D2204A001CAA4F /* MobiquityTAUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50C101E528D2204A001CAA4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50C101D228D22048001CAA4F /* MobiquityTA */;
+			targetProxy = 50C101E428D2204A001CAA4F /* PBXContainerItemProxy */;
+		};
+		50C101EF28D2204A001CAA4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50C101D228D22048001CAA4F /* MobiquityTA */;
+			targetProxy = 50C101EE28D2204A001CAA4F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		50C101F528D2204A001CAA4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		50C101F628D2204A001CAA4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50C101F828D2204A001CAA4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MobiquityTA/Preview Content\"";
+				DEVELOPMENT_TEAM = W7R6ZCLV57;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = atme.MobiquityTA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		50C101F928D2204A001CAA4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MobiquityTA/Preview Content\"";
+				DEVELOPMENT_TEAM = W7R6ZCLV57;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = atme.MobiquityTA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		50C101FB28D2204A001CAA4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W7R6ZCLV57;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = atme.MobiquityTATests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobiquityTA.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MobiquityTA";
+			};
+			name = Debug;
+		};
+		50C101FC28D2204A001CAA4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W7R6ZCLV57;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = atme.MobiquityTATests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobiquityTA.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MobiquityTA";
+			};
+			name = Release;
+		};
+		50C101FE28D2204A001CAA4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W7R6ZCLV57;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = atme.MobiquityTAUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MobiquityTA;
+			};
+			name = Debug;
+		};
+		50C101FF28D2204A001CAA4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W7R6ZCLV57;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = atme.MobiquityTAUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MobiquityTA;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50C101CE28D22048001CAA4F /* Build configuration list for PBXProject "MobiquityTA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50C101F528D2204A001CAA4F /* Debug */,
+				50C101F628D2204A001CAA4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50C101F728D2204A001CAA4F /* Build configuration list for PBXNativeTarget "MobiquityTA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50C101F828D2204A001CAA4F /* Debug */,
+				50C101F928D2204A001CAA4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50C101FA28D2204A001CAA4F /* Build configuration list for PBXNativeTarget "MobiquityTATests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50C101FB28D2204A001CAA4F /* Debug */,
+				50C101FC28D2204A001CAA4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50C101FD28D2204A001CAA4F /* Build configuration list for PBXNativeTarget "MobiquityTAUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50C101FE28D2204A001CAA4F /* Debug */,
+				50C101FF28D2204A001CAA4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50C101CB28D22048001CAA4F /* Project object */;
+}
