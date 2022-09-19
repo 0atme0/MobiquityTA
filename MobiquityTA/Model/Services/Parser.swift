@@ -7,12 +7,10 @@
 
 import Foundation
 
-typealias ParserSearchResult = Result<[Photo], Error>
-
 class Parser {
     let decoder = JSONDecoder()
     
-    func photoSearch(json: Data) -> ParserSearchResult {
+    func photoSearch(json: Data) -> SearchResult {
         let decoder = JSONDecoder()
         do {
             let jsonPhotos = try decoder.decode(PhotoResponse.self, from: json)

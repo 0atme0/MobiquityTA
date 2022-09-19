@@ -7,7 +7,7 @@
 
 import Foundation
 
-// MARK: - Welcome
+// MARK: - PhotoResponse
 struct PhotoResponse: Codable {
     let photos: Photos
     let stat: String
@@ -27,4 +27,7 @@ struct Photo: Codable {
     let farm: Int
     let title: String
     let ispublic, isfriend, isfamily: Int
+    var photoURL: URL? {
+        URL(string: "http://farm\(farm).static.flickr.com/\(server)/\(id)_\(secret).jpg")
+    }
 }
