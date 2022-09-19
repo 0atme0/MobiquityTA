@@ -13,7 +13,7 @@ class SearchViewModel: ObservableObject {
     @Published var photos: [Photo] = []
     @Published var showingError: String?
     @Published var currentPage = 0
-    @Published var membersListFull = false
+    @Published var photosListFull = false
     let perPage = 20
 
     init(searchWorker: SearchWorker = SearchWorker()) {
@@ -29,7 +29,7 @@ class SearchViewModel: ObservableObject {
                     self?.photos.append(contentsOf: photos)
                     // If count of data received is less than perPage value then it is last page.
                     if photos.count < self?.perPage ?? 0 {
-                          self?.membersListFull = true
+                          self?.photosListFull = true
                       }
                 case .failure(let error):
                     self?.showingError = error.localizedDescription

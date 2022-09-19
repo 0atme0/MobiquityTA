@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct SearchView: View {
+    
     @State var searchText: String = ""
     @State private var searchHistory = ["First", "Second", "Third"]
     @State private var selection: String = ""
     var grid = [GridItem(.flexible()), GridItem(.flexible())]
     @ObservedObject var viewmodel: SearchViewModel
+    
     var body: some View {
         VStack {
             NavigationView {
@@ -33,6 +35,12 @@ struct SearchView: View {
                                     EmptyView()
                                 }
                             }
+                        }
+                        if viewmodel.photosListFull == false && viewmodel.photos.count > 0 {
+                            ProgressView()
+                                .onAppear {
+                                    viewmodel.search(searchText)
+                                }
                         }
                     }
                 }
