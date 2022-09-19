@@ -1,20 +1,14 @@
 //
-//  SearchView.swift
+//  SearchView+SearchContent.swift
 //  MobiquityTA
 //
-//  Created by atme on 14/09/2022.
+//  Created by atme on 19/09/2022.
 //
 
 import SwiftUI
 
-struct SearchView: View {
-    
-    @State var searchText: String = ""
-    @State private var selection: String = ""
-    var grid = [GridItem(.flexible()), GridItem(.flexible())]
-    @ObservedObject var viewmodel: SearchViewModel
-    
-    var body: some View {
+extension SearchView {
+    var searchContent: some View {
         VStack {
             NavigationView {
                 ScrollView {
@@ -54,16 +48,12 @@ struct SearchView: View {
             Spacer()
         }
     }
-    
+}
+
+extension SearchView {
     func runSearch() {
         Task {
             viewmodel.search(searchText)
         }
-    }
-}
-
-struct SearchView_Previews: PreviewProvider {
-    static var previews: some View {
-        SearchView(viewmodel: SearchViewModel())
     }
 }

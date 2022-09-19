@@ -15,6 +15,9 @@
 		502FCB2828D8E2FF00F88244 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502FCB2728D8E2FF00F88244 /* Parser.swift */; };
 		502FCB3028D8ED5500F88244 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502FCB2F28D8ED5500F88244 /* Storage.swift */; };
 		502FCB3228D8F14100F88244 /* Array+Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502FCB3128D8F14100F88244 /* Array+Storage.swift */; };
+		502FCB3628D8F66800F88244 /* SearchView+Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502FCB3528D8F66800F88244 /* SearchView+Content.swift */; };
+		502FCB3828D8F68900F88244 /* SearchView+SearchContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502FCB3728D8F68900F88244 /* SearchView+SearchContent.swift */; };
+		502FCB3A28D8F6BE00F88244 /* SearchView+ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502FCB3928D8F6BE00F88244 /* SearchView+ErrorView.swift */; };
 		50C101D728D22048001CAA4F /* MobiquityTAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C101D628D22048001CAA4F /* MobiquityTAApp.swift */; };
 		50C101DB28D2204A001CAA4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C101DA28D2204A001CAA4F /* Assets.xcassets */; };
 		50C101DE28D2204A001CAA4F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C101DD28D2204A001CAA4F /* Preview Assets.xcassets */; };
@@ -50,6 +53,9 @@
 		502FCB2728D8E2FF00F88244 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		502FCB2F28D8ED5500F88244 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		502FCB3128D8F14100F88244 /* Array+Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Storage.swift"; sourceTree = "<group>"; };
+		502FCB3528D8F66800F88244 /* SearchView+Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchView+Content.swift"; sourceTree = "<group>"; };
+		502FCB3728D8F68900F88244 /* SearchView+SearchContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchView+SearchContent.swift"; sourceTree = "<group>"; };
+		502FCB3928D8F6BE00F88244 /* SearchView+ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchView+ErrorView.swift"; sourceTree = "<group>"; };
 		50C101D328D22048001CAA4F /* MobiquityTA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobiquityTA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C101D628D22048001CAA4F /* MobiquityTAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiquityTAApp.swift; sourceTree = "<group>"; };
 		50C101DA28D2204A001CAA4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -129,7 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				50C101D628D22048001CAA4F /* MobiquityTAApp.swift */,
-				50C1020028D22286001CAA4F /* SearchView.swift */,
+				502FCB3428D8F65700F88244 /* SearchView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -148,6 +154,17 @@
 				502FCB3128D8F14100F88244 /* Array+Storage.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		502FCB3428D8F65700F88244 /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				50C1020028D22286001CAA4F /* SearchView.swift */,
+				502FCB3528D8F66800F88244 /* SearchView+Content.swift */,
+				502FCB3728D8F68900F88244 /* SearchView+SearchContent.swift */,
+				502FCB3928D8F6BE00F88244 /* SearchView+ErrorView.swift */,
+			);
+			path = SearchView;
 			sourceTree = "<group>";
 		};
 		50C101CA28D22048001CAA4F = {
@@ -343,10 +360,13 @@
 				502FCB2028D8D90D00F88244 /* Constants.swift in Sources */,
 				502FCB2228D8DB3100F88244 /* Network.swift in Sources */,
 				502FCB3228D8F14100F88244 /* Array+Storage.swift in Sources */,
+				502FCB3A28D8F6BE00F88244 /* SearchView+ErrorView.swift in Sources */,
 				502FCB2628D8E21300F88244 /* Photos.swift in Sources */,
 				502FCB2828D8E2FF00F88244 /* Parser.swift in Sources */,
+				502FCB3828D8F68900F88244 /* SearchView+SearchContent.swift in Sources */,
 				502FCB3028D8ED5500F88244 /* Storage.swift in Sources */,
 				502FCB1E28D8D8BF00F88244 /* SearchWorker.swift in Sources */,
+				502FCB3628D8F66800F88244 /* SearchView+Content.swift in Sources */,
 				50C1020128D22286001CAA4F /* SearchView.swift in Sources */,
 				50C101D728D22048001CAA4F /* MobiquityTAApp.swift in Sources */,
 			);

@@ -8,7 +8,13 @@
 import SwiftUI
 import Combine
 
-class SearchViewModel: ObservableObject {
+protocol SearchViewModelProtocol: ObservableObject {
+    func search(_ text: String)
+    func fetchNewPage()
+    var photos: [Photo] {get}
+}
+
+class SearchViewModel: SearchViewModelProtocol {
     
     let searchWorker: SearchWorker
     let storage: Storage
