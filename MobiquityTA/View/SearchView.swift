@@ -44,8 +44,8 @@ struct SearchView: View {
                     }
                 }
                 .searchable(text: $searchText, prompt: "Look for something") {
-                    ForEach(viewmodel.storage.searchHistory, id: \.self) {
-                        Text($0.capitalized)
+                    ForEach(viewmodel.storage.searchHistory, id: \.self) { item in
+                        Text(item.capitalized).searchCompletion(item)
                     }
                 }
                 .navigationTitle("Flickr Image Search")
@@ -56,7 +56,6 @@ struct SearchView: View {
     }
     
     func runSearch() {
-        print(#function)
         Task {
             viewmodel.search(searchText)
         }
