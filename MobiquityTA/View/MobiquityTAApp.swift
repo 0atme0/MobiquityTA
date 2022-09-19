@@ -11,7 +11,7 @@ import SwiftUI
 struct MobiquityTAApp: App {
     var body: some Scene {
         WindowGroup {
-            SearchView()
+            SearchView(viewmodel: SearchViewModel())
         }
     }
 }
