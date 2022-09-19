@@ -13,6 +13,8 @@
 		502FCB2428D8DD1800F88244 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502FCB2328D8DD1800F88244 /* SearchViewModel.swift */; };
 		502FCB2628D8E21300F88244 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502FCB2528D8E21300F88244 /* Photos.swift */; };
 		502FCB2828D8E2FF00F88244 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502FCB2728D8E2FF00F88244 /* Parser.swift */; };
+		502FCB3028D8ED5500F88244 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502FCB2F28D8ED5500F88244 /* Storage.swift */; };
+		502FCB3228D8F14100F88244 /* Array+Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502FCB3128D8F14100F88244 /* Array+Storage.swift */; };
 		50C101D728D22048001CAA4F /* MobiquityTAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C101D628D22048001CAA4F /* MobiquityTAApp.swift */; };
 		50C101DB28D2204A001CAA4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C101DA28D2204A001CAA4F /* Assets.xcassets */; };
 		50C101DE28D2204A001CAA4F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C101DD28D2204A001CAA4F /* Preview Assets.xcassets */; };
@@ -46,6 +48,8 @@
 		502FCB2328D8DD1800F88244 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		502FCB2528D8E21300F88244 /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
 		502FCB2728D8E2FF00F88244 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		502FCB2F28D8ED5500F88244 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		502FCB3128D8F14100F88244 /* Array+Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Storage.swift"; sourceTree = "<group>"; };
 		50C101D328D22048001CAA4F /* MobiquityTA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobiquityTA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C101D628D22048001CAA4F /* MobiquityTAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiquityTAApp.swift; sourceTree = "<group>"; };
 		50C101DA28D2204A001CAA4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 				502FCB1D28D8D8BF00F88244 /* SearchWorker.swift */,
 				502FCB2728D8E2FF00F88244 /* Parser.swift */,
 				502FCB2128D8DB3100F88244 /* Network.swift */,
+				502FCB2F28D8ED5500F88244 /* Storage.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -114,6 +119,7 @@
 		502FCB2C28D8E7B900F88244 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				502FCB3328D8F15000F88244 /* Extension */,
 				502FCB1F28D8D90D00F88244 /* Constants.swift */,
 			);
 			path = Helper;
@@ -134,6 +140,14 @@
 				502FCB2328D8DD1800F88244 /* SearchViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		502FCB3328D8F15000F88244 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				502FCB3128D8F14100F88244 /* Array+Storage.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		50C101CA28D22048001CAA4F = {
@@ -328,8 +342,10 @@
 				502FCB2428D8DD1800F88244 /* SearchViewModel.swift in Sources */,
 				502FCB2028D8D90D00F88244 /* Constants.swift in Sources */,
 				502FCB2228D8DB3100F88244 /* Network.swift in Sources */,
+				502FCB3228D8F14100F88244 /* Array+Storage.swift in Sources */,
 				502FCB2628D8E21300F88244 /* Photos.swift in Sources */,
 				502FCB2828D8E2FF00F88244 /* Parser.swift in Sources */,
+				502FCB3028D8ED5500F88244 /* Storage.swift in Sources */,
 				502FCB1E28D8D8BF00F88244 /* SearchWorker.swift in Sources */,
 				50C1020128D22286001CAA4F /* SearchView.swift in Sources */,
 				50C101D728D22048001CAA4F /* MobiquityTAApp.swift in Sources */,

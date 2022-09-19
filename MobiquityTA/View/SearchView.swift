@@ -10,7 +10,6 @@ import SwiftUI
 struct SearchView: View {
     
     @State var searchText: String = ""
-    @State private var searchHistory = ["First", "Second", "Third"]
     @State private var selection: String = ""
     var grid = [GridItem(.flexible()), GridItem(.flexible())]
     @ObservedObject var viewmodel: SearchViewModel
@@ -39,13 +38,13 @@ struct SearchView: View {
                         if viewmodel.photosListFull == false && viewmodel.photos.count > 0 {
                             ProgressView()
                                 .onAppear {
-                                    viewmodel.search(searchText)
+                                    viewmodel.fetchNewPage()
                                 }
                         }
                     }
                 }
                 .searchable(text: $searchText, prompt: "Look for something") {
-                    ForEach(searchHistory, id: \.self) {
+                    ForEach(viewmodel.storage.searchHistory, id: \.self) {
                         Text($0.capitalized)
                     }
                 }
