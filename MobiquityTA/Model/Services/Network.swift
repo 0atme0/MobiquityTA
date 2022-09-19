@@ -10,8 +10,12 @@ import Foundation
 typealias NetworkResult = Result<Data, Error>
 typealias NetworkResultHandler = (NetworkResult)->()
 
-class Network {
-    func sendRequest(_ url: String, parameters: [String: String], completion: @escaping NetworkResultHandler) {
+protocol NetworkProtocol {
+    func sendRequest(_ url: String, parameters: [String: String], completion: @escaping NetworkResultHandler)
+}
+
+class Network: NetworkProtocol {
+    public func sendRequest(_ url: String, parameters: [String: String], completion: @escaping NetworkResultHandler) {
         print(#function, parameters)
         var components = URLComponents(string: url)!
         components.queryItems = parameters.map { (key, value) in

@@ -16,16 +16,16 @@ protocol SearchViewModelProtocol: ObservableObject {
 
 class SearchViewModel: SearchViewModelProtocol {
     
-    let searchWorker: SearchWorker
-    let storage: Storage
+    let searchWorker: SearchWorkerProtocol
+    let storage: any StorageProtocol
     @Published var photos: [Photo] = []
     @Published var showingError: String?
     @Published var currentPage = 0
     @Published var photosListFull = false
     @Published var currentSearchText = ""
     let perPage = 20
-
-    init(searchWorker: SearchWorker = SearchWorker(), storage: Storage = Storage()) {
+    
+    init(searchWorker: SearchWorkerProtocol = SearchWorker(), storage: any StorageProtocol = Storage()) {
         self.searchWorker = searchWorker
         self.storage = storage
     }
@@ -40,7 +40,7 @@ class SearchViewModel: SearchViewModelProtocol {
                     self?.photos = photos
                     // If count of data received is less than perPage value then it is last page.
                     if photos.count < self?.perPage ?? 0 {
-                          self?.photosListFull = true
+                        self?.photosListFull = true
                     }
                 case .failure(let error):
                     self?.showingError = error.localizedDescription
@@ -57,8 +57,8 @@ class SearchViewModel: SearchViewModelProtocol {
                     self?.photos.append(contentsOf: photos)
                     // If count of data received is less than perPage value then it is last page.
                     if photos.count < self?.perPage ?? 0 {
-                          self?.photosListFull = true
-                      }
+                        self?.photosListFull = true
+                    }
                 case .failure(let error):
                     self?.showingError = error.localizedDescription
                 }

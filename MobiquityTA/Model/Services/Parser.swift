@@ -7,10 +7,14 @@
 
 import Foundation
 
-class Parser {
-    let decoder = JSONDecoder()
+protocol ParserProtocol {
+    func photoSearch(json: Data) -> SearchResult
+}
+
+class Parser: ParserProtocol {
+    private let decoder = JSONDecoder()
     
-    func photoSearch(json: Data) -> SearchResult {
+    public func photoSearch(json: Data) -> SearchResult {
         let decoder = JSONDecoder()
         do {
             let jsonPhotos = try decoder.decode(PhotoResponse.self, from: json)

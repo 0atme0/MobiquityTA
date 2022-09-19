@@ -10,17 +10,21 @@ import Foundation
 typealias SearchResult = Result<[Photo], Error>
 typealias SearchResultHandler = (SearchResult)->()
 
-class SearchWorker {
+protocol SearchWorkerProtocol {
+    func searchByKeyword(keyword: String, perPage: Int, pageNumber : Int, completion: @escaping SearchResultHandler)
+}
+
+class SearchWorker: SearchWorkerProtocol {
     
-    private let network: Network
-    private let parser: Parser
+    private let network: NetworkProtocol
+    private let parser: ParserProtocol
     
-    init(network: Network = Network(), parser: Parser = Parser()) {
+    init(network: NetworkProtocol = Network(), parser: ParserProtocol = Parser()) {
         self.network = network
         self.parser = parser
     }
     
-    func searchByKeyword(keyword: String, perPage: Int, pageNumber : Int, completion: @escaping SearchResultHandler) {
+    public func searchByKeyword(keyword: String, perPage: Int, pageNumber : Int, completion: @escaping SearchResultHandler) {
         let parameters: [String: String] = [
             "method": Constants.Network.SEARCH_BY_KEYWORD,
             "api_key": Constants.Network.API_KEY,
