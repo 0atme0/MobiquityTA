@@ -14,6 +14,10 @@ protocol ParserProtocol {
 class Parser: ParserProtocol {
     private let decoder = JSONDecoder()
     
+    //MARK: - Public methods
+    ///  Parses data to [Photo]
+    /// - Parameter json: response data
+    /// - Returns: Result<[Photo]>
     public func photoSearch(json: Data) -> SearchResult {
         let decoder = JSONDecoder()
         do {

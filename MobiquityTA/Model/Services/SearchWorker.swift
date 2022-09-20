@@ -23,7 +23,13 @@ class SearchWorker: SearchWorkerProtocol {
         self.network = network
         self.parser = parser
     }
-    
+    //MARK: - Public methods
+    /// Fetch photos by search
+    /// - Parameters:
+    ///   - keyword: value for search
+    ///   - perPage: amount of photos per page
+    ///   - pageNumber: page number
+    ///   - completion: return a result
     public func searchByKeyword(keyword: String, perPage: Int, pageNumber : Int, completion: @escaping SearchResultHandler) {
         let parameters: [String: String] = [
             "method": Constants.Network.SEARCH_BY_KEYWORD,

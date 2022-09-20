@@ -29,7 +29,9 @@ class SearchViewModel: SearchViewModelProtocol {
         self.searchWorker = searchWorker
         self.storage = storage
     }
-    
+    //MARK: - Public methods
+    /// Sends SearchByKeyword request and updates photos
+    /// - Parameter text: from search bar
     func search(_ text: String) {
         self.currentSearchText = text
         storage.saveSearchText(text)
@@ -48,6 +50,8 @@ class SearchViewModel: SearchViewModelProtocol {
             }
         }
     }
+    
+    /// Fetches next page for searchByKeyword
     func fetchNewPage() {
         self.currentPage += 1
         searchWorker.searchByKeyword(keyword: currentSearchText, perPage: perPage, pageNumber: currentPage) { [weak self] result in

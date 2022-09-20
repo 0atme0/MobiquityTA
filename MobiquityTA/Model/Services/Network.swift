@@ -15,6 +15,12 @@ protocol NetworkProtocol {
 }
 
 class Network: NetworkProtocol {
+    //MARK: - Public methods
+    /// sends network requests
+    /// - Parameters:
+    ///   - url: url string
+    ///   - parameters: parameters of url request
+    ///   - completion: returns response
     public func sendRequest(_ url: String, parameters: [String: String], completion: @escaping NetworkResultHandler) {
         print(#function, parameters)
         var components = URLComponents(string: url)!
@@ -39,5 +45,4 @@ class Network: NetworkProtocol {
         }
         task.resume()
     }
-
 }
