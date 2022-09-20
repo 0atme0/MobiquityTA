@@ -15,7 +15,9 @@ protocol NetworkProtocol {
 }
 
 class Network: NetworkProtocol {
+    
     //MARK: - Public methods
+    
     /// sends network requests
     /// - Parameters:
     ///   - url: url string
@@ -28,6 +30,7 @@ class Network: NetworkProtocol {
             URLQueryItem(name: key, value: value)
         }
         components.percentEncodedQuery = components.percentEncodedQuery?.replacingOccurrences(of: "+", with: "%2B")
+        print(components.url!)
         let request = URLRequest(url: components.url!)
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             guard

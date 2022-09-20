@@ -29,7 +29,9 @@ class SearchViewModel: SearchViewModelProtocol {
         self.searchWorker = searchWorker
         self.storage = storage
     }
+    
     //MARK: - Public methods
+    
     /// Sends SearchByKeyword request and updates photos
     /// - Parameter text: from search bar
     func search(_ text: String) {
@@ -69,6 +71,5 @@ class SearchViewModel: SearchViewModelProtocol {
             }
         }
     }
-    
     
 }

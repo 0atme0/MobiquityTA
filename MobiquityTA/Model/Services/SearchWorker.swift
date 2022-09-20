@@ -24,6 +24,7 @@ class SearchWorker: SearchWorkerProtocol {
         self.parser = parser
     }
     //MARK: - Public methods
+    
     /// Fetch photos by search
     /// - Parameters:
     ///   - keyword: value for search
