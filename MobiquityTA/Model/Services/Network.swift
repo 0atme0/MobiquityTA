@@ -24,13 +24,11 @@ class Network: NetworkProtocol {
     ///   - parameters: parameters of url request
     ///   - completion: returns response
     public func sendRequest(_ url: String, parameters: [String: String], completion: @escaping NetworkResultHandler) {
-        print(#function, parameters)
         var components = URLComponents(string: url)!
         components.queryItems = parameters.map { (key, value) in
             URLQueryItem(name: key, value: value)
         }
         components.percentEncodedQuery = components.percentEncodedQuery?.replacingOccurrences(of: "+", with: "%2B")
-        print(components.url!)
         let request = URLRequest(url: components.url!)
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             guard
